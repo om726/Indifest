@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiFest</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Styling for the Page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/3/39/Harmandir_Sahib_night_view.jpg') no-repeat center center fixed;
+            background-size: cover;  /* Ensures the image covers the full page */
+        }
+
+        /* Icons Bar as the Header */
+        .icons-bar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .icons-bar a {
+            color: white;
+            font-size: 20px;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .icons-bar a:hover {
+            color: #f0ad4e;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/0/00/Lumbini_the_birth_place_of_lord_Buddha_50.jpg') no-repeat center center;
+            background-size: cover;  /* Ensures the image covers the full hero section */
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Featured Festivals Section */
+        .festivals {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            padding: 0 20px;
+        }
+
+        .festival-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s;
+        }
+
+        .festival-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .festival-card h3 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .festival-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Latest Updates Section */
+        .updates {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        .updates h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .updates ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .updates ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .updates ul li a {
+            color: #f0ad4e;
+            text-decoration: none;
+        }
+
+        .updates ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* India Map Section */
+        .india-map {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .india-map img {
+            max-width: 80%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Icons Bar as the Header -->
+    <div class="icons-bar">
+        <a href="index.html"> Home</a>
+        <a href="festival-list.html"> Festivals</a>
+        <a href="travel-guide.html"> Travel</a>
+        <a href="feedback.html"> Feedback</a>
+        <a href="data-source.html"> Data Source</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Discover Festivals Across India</h2>
+        <p>Get information on the festivals happening in every state and plan your trip accordingly!</p>
+    </section>
+
+    <!-- Featured Festivals Section -->
+    <section class="festivals">
+        <div class="festival-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/DIWALI_2022.jpg" alt="Diwali Festival">
+            <h3>Diwali</h3>
+            <p>The Festival of Lights celebrated in October-November.</p>
+        </div>
+        <div class="festival-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Holi_Festival_of_Colors_Utah%2C_United_States_2013.jpg" alt="Holi Festival">
+            <h3>Holi</h3>
+            <p>The Festival of Colors celebrated in March.</p>
+        </div>
+        <div class="festival-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ramnavmi.jpg" alt="ram_navmi Festival">
+            <h3>ram_navmi</h3>
+            <p>The festival of ram navmi celebrated in april.</p>
+        </div>
+        <div class="festival-card">
+            <img src="https://srikrishinternationalschool.com/wp-content/uploads/2024/08/Krishna-Jayanthi-3-768x768.jpg" alt="janmashtami Festival">
+            <h3>Janmashtami</h3>
+            <p>The festival of god krishna celebrated in August-September.</p>
+        </div>
+        <div class="festival-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Ganapati_with_Mooshak.jpg" alt="Ganesha_Chaturthi Festival">
+            <h3>Ganesha_Chaturthi</h3>
+            <p>The festival of loard Ganesha celebrated in september-November.</p>
+        </div>
+    </section>
+
+    <!-- Latest Updates Section -->
+    <section class="updates">
+        <h2>Latest Festival Updates</h2>
+        <ul>
+            <li><a href="#">Rath Yatra in Puri - June/July</a></li>
+            <li><a href="#">Navratri in Gujarat - September/October</a></li>
+            <li><a href="#">Makar Sankranti - January</a></li>
+            <li><a href="#">Durga Puja - September/October</a></li>
+            <li><a href="#">Lohri in Punjab - January</a></li>
+        </ul>
+    </section>
+
+    <!-- India Map Section -->
+    <section class="india-map">
+        <h2>Explore the Festivals on the India Map</h2>
+        <img src="https://example.com/india-map.jpg" alt="India Map">
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 IndiFest | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
